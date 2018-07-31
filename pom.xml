@@ -31,6 +31,11 @@
       <artifactId>logback-classic</artifactId>
       <version>1.1.1</version>
     </dependency>
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.2</version>
+    </dependency>
     <!-- 数据库 -->
     <dependency>
       <groupId>mysql</groupId>
@@ -80,45 +85,51 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <!-- spring dao -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-tx</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <!-- spring web -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
     </dependency>
     <!-- spring test -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>4.10.0.RELEASE</version>
+      <version>4.3.18.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>4.3.18.RELEASE</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
