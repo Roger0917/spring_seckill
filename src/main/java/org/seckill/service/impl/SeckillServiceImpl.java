@@ -109,4 +109,11 @@ public class SeckillServiceImpl implements SeckillService {
         String md5 = DigestUtils.md5DigestAsHex(base.getBytes());
         return md5;
     }
+
+    public static void main(String[] args) {
+        long seckillId = 1001;
+        String slat ="afjeghawohgnospurfpeworai134";
+        String base = seckillId+"/"+slat;
+        System.out.println(DigestUtils.md5DigestAsHex(base.getBytes()));
+    }
 }
