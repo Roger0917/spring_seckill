@@ -47,7 +47,7 @@ public class SeckillServiceTest {
     //测试代码完整逻辑,可重复执行
     @Test
     public void exportSeckillUrl() {
-        long id = 1000;
+        long id = 1001;
         Exposer exposer = seckillService.exportSeckillUrl(id);
         if(exposer.isExposed()){
             logger.info("exposer={}",exposer);
@@ -73,11 +73,25 @@ public class SeckillServiceTest {
         seckillId=1000, now=0, start=0, end=0}*/
     }
 
-    @Test
+
+
+   /* @Test
     public void executeSeckill() {
         long id = 1000;
         long phone = 15747968522L;
         String md5 = "6eb4bfc328f9faff3bdf015a79e10fab";
 
-    }
+    }*/
+   @Test
+   public void executeSeckillProcedure(){
+       long seckillId = 1001;
+       long phone;
+       Exposer exposer = seckillService.exportSeckillUrl(seckillId);
+       if (exposer.isExposed()){
+           String md5 = exposer.getMd5();
+           SeckillExecution seckillExecution = seckillService.executeSeckillProducer(seckillId,phone,md5);
+           logger.info(seckillExecution.getStateInfo());
+       }
+
+   }
 }

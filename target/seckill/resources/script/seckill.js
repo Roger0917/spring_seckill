@@ -101,7 +101,7 @@ var seckill ={
                 killPhoneModal.modal({
                     show: true, //显示弹出层
                     backdrop:'static', //禁止位置关闭
-                    keyboard: true //关闭键盘事件
+                    keyboard: false //关闭键盘事件
                 });
                 $("#killPhoneBtn").click(function () {
                    var inputPhone = $("#killphoneKey").val();
